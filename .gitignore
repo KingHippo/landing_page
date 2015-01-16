@@ -1,2 +1,7 @@
 *.DS_Store
+bower.json
+bower_components
+node_modules
+Gruntfile.js
+package.json
 
