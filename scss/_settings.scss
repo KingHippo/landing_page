@@ -96,6 +96,7 @@ $include-html-global-classes: $include-html-classes;
 // $font-weight-bold: bold !default;
 
 // $white       : #FFFFFF;
+$white       : #FFFFFF;
 // $ghost       : #FAFAFA;
 // $snow        : #F9F9F9;
 // $vapor       : #F6F6F6;
@@ -114,10 +115,13 @@ $include-html-global-classes: $include-html-classes;
 // $oil         : #333333;
 // $jet         : #222222;
 // $black       : #000000;
+$black       : #000000;
+$grey        : #868686;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
 // $secondary-color: #e7e7e7;
+$secondary-color: $grey;
 // $alert-color: #f04124;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
@@ -125,6 +129,7 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to control various global styles
 // $body-bg: $white;
+$body-bg: $grey;
 // $body-font-color: $jet;
 // $body-font-family: $font-family-sans-serif;
 // $body-font-weight: $font-weight-normal;
@@ -432,7 +437,7 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to control button text styles.
 // $button-font-family: $body-font-family;
-// $button-font-color: $white;
+$button-font-color: $white;
 // $button-font-color-alt: $oil;
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
@@ -443,10 +448,12 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to control various hover effects.
 // $button-function-factor: -20%;
+$button-function-factor: -10%;
 
 // We use these to control button border and hover styles.
 // $button-border-width: 0px;
 // $button-border-style: solid;
+$button-border-style: none;
 // $button-bg-color: $primary-color;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
@@ -473,7 +480,7 @@ $include-html-global-classes: $include-html-classes;
 // Sets the margin for the right side by default, and the left margin if right-to-left direction is used
 // $button-bar-margin-opposite: rem-calc(10);
 // $button-group-border-width: 1px;
-
+$button-group-border-width: 0px;
 // 07. Clearing
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
