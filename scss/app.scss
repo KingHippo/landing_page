@@ -44,6 +44,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.button-group:hover li a{
+  color: #000000;
+}
+
 .container {
   height: 100%;
   display: flex;
@@ -128,9 +132,3 @@
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
 }
-// #hidden:hover {
-//   opacity: 1;
-//   transition: all 1s ease-in-out;
-//   -webkit-transition: all 1s ease-in-out;
-//   -moz-transition: all 1s ease-in-out;
-// }
