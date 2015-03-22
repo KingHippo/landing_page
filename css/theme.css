@@ -1,0 +1,96 @@
+@import url("//fonts.googleapis.com/css?family=PT+Mono");
+
+#color-box1 {
+background-color:#FFFFFF;
+right:0;
+}
+
+#color-box2 {
+right:50px;
+background-color:#00191C;
+}
+
+body {
+    color: #222222;
+    padding: 0;
+    margin: 0;
+    font-family: 'PT Mono', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    position: relative;
+    cursor: default;
+}
+
+#container {
+    width: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60%;
+}
+
+/*color box settings*/
+#color-box1,#color-box2 {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    float: left;
+    -webkit-transition: margin .5s ease-out;
+    -moz-transition: margin .5s ease-out;
+    -o-transition: margin .5s ease-out;
+    border-color: #B5E655;
+    border-style: solid;
+    margin: 15px;
+}
+
+#color-box1:hover, #color-box2:hover {
+    margin-top: 4px;
+}
+
+#color-box1 {
+    background-color: #FFFFFF;
+    right: 0;
+}
+
+#color-box2 {
+    right: 50px;
+    background-color: #00191C;
+}
+
+#underline {
+    border-bottom: 3px solid;
+}
+
+#nav {
+    padding: 20px;
+}
+
+#nav a {
+    padding-left: 2px;
+    font-size: 20px;
+    text-align: center;
+    color: inherit;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #CC4A14;
+}
+
+#nav a:hover {
+    text-decoration: none;
+    color: #1485CC;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}

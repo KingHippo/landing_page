@@ -1,0 +1,13 @@
+
+#box
+{
+    overflow: auto;
+    width: auto;
+    margin: auto;
+}
+.square
+{
+    float: left;
+    border: 1px solid white;
+    background-color: black;
+}

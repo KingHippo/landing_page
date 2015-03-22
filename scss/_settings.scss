@@ -2,7 +2,6 @@
 // foundation.zurb.com
 // Licensed under MIT Open Source
 
-//
 
 // Table of Contents
 // Foundation Settings
@@ -117,6 +116,7 @@ $white       : #FFFFFF;
 // $black       : #000000;
 $black       : #000000;
 $grey        : #868686;
+$blog-color  : #E2E2E2;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
@@ -324,14 +324,17 @@ $body-bg: $grey;
 
 // $accordion-navigation-padding: rem-calc(16);
 // $accordion-navigation-bg-color: $silver;
+$accordion-navigation-bg-color: $blog-color;
 // $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
 // $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
+// $accordion-navigation-font-color: $jet;
 // $accordion-navigation-font-color: $jet;
 // $accordion-navigation-font-size: rem-calc(16);
 // $accordion-navigation-font-family: $body-font-family;
 
 // $accordion-content-padding: ($column-gutter/2);
 // $accordion-content-active-bg-color: $white;
+$accordion-content-active-bg-color: $white;
 
 // 02. Alert Boxes
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -1141,6 +1144,7 @@ $button-group-border-width: 0px;
 
 // We use these to control link styles.
 // $side-nav-link-color: $primary-color;
+$side-nav-link-color: $black;
 // $side-nav-link-color-active: scale-color($side-nav-link-color, $lightness: 30%);
 // $side-nav-link-color-hover: scale-color($side-nav-link-color, $lightness: 30%);
 // $side-nav-link-bg-hover: hsla(0, 0, 0, 0.025);

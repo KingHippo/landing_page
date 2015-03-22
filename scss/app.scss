@@ -1,6 +1,5 @@
-@import "settings";
-@import "foundation";
-
+@import 'settings';
+@import 'foundation';
 // Or selectively include components
 // @import
 //   "foundation/components/accordion",
@@ -39,96 +38,221 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
-// My custom classes
-.sans li a{
-  font-family: 'Open Sans', sans-serif;
+// My custom css/sass
+
+//RESUME STYLES
+.resume {
+  background-color: #ffffff;
+}
+hr {
+  margin: .25rem 0 1.1875rem;
+  border-color: #000000;
 }
 
-.button-group:hover li a{
-  color: #000000;
+span {
+  font-weight: bold;
 }
 
+.side-nav {
+  padding: 0.075rem 0;
+}
+//END RESUME STYLES
+
+// CONTACT STYLE
+textarea {
+  min-height:150px;
+}
+// CONTACT STYLE
+
+//BLOG STYLES
 .container {
+  background: #868686;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  overflow-x: hidden;
+  padding-left: 280px;
+  width: 100%;
 }
-.container a {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.sidebar {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 280px;
+  background: #000000;
 }
-.circle-logo {
-  width: 10em;
-  height: 10em;
-  border: 0.8em double;
-  border-radius: 6em;
-  z-index: 0;
-  -webkit-box-shadow: 0px 10px 8px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0px 10px 8px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 0px 10px 8px 0px rgba(50, 50, 50, 0.75);
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
+.inline-list {
+    display: flex;
+    flex-direction: left;
+
+    justify-content: center;
+    padding-top: 10px;
 }
-.circle-logo a {
-  font-size: 7em;
-  color: #000000;
-  text-align: center;
-  line-height: 0.98;
-  font-family: Baumans, cursive;
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
+.blog {
+    padding-top: 10px;
 }
-.circle-logo:hover {
-  z-index: 100;
-  color: #FFFFFF;
-  background-color: #403E3E;
-  text-decoration: none;
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-}
-.circle-logo:hover a {
-  color: #FFFFFF;
-  transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
-}
-.button.secondary {
-  background-color: #868686;
-}
-.button-group.even-4 li a {
-  border-left: none;
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
+// END BLOG STYLES
+
+// LOGO STYLES
+.home-logo
+{
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    justify-content: center;
 }
 
-#visible {
-  opacity: 1;
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
+.logo {
+  padding-top:2em;
+}
+.logo p
+{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
 }
 
-#visible:hover {
-  #hidden {
-    opacity:1;
-    transition: all 1s ease-in-out;
+.circle-logo
+{
+    position: relative;
+    display: block;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 10em;
+    height: 10em;
+
+    border-radius: 6em;
+
+    transform-style: flat;
+    &:before,
+    &:after
+    {
+        position: absolute;
+        z-index: -2;
+
+        content: '';
+        transition: all 1s ease-in-out;
+    }
+}
+
+.flatten
+{
+    box-shadow: none;
+    &:before
+    {
+        top: 0;
+        left: 0;
+
+        width: 10em;
+        height: 10em;
+
+        border: .8em double;
+        border-radius: 6em;
+        box-shadow: 0 20px 10px -10px rgba(31, 31, 31, .5);
+    }
+    &:hover
+    {
+        &:before
+        {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(128, 128, 128, .1) inset;
+        }
+    }
+}
+
+.circle-logo p
+{
+    color: #000000;
+    font-family: Baumans, cursive;
+    font-size: 7em;
+    line-height: 1.2;
     -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-  }
+       -moz-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+}
+.circle-logo:hover
+{
+
+    color: #ffffff;
+}
+.circle-logo:hover p
+{
+    -webkit-transition: all 1s ease-in-out;
+       -moz-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+    color: #ffffff;
+}
+// END LOGO STYLES
+
+// BUTTON STYLES
+.button.secondary
+{
+    background-color: #868686;
 }
 
-#hidden {
-  opacity: 0;
-  padding-top:1em;
-  transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  -moz-transition: all 1s ease-in-out;
+.button-group:hover li a
+{
+    color: #000000;
 }
+
+.button-group.even-4 li a
+{
+    -webkit-transition: all 1s ease-in-out;
+       -moz-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+
+    border-left: none;
+}
+// END BUTTON STYLES
+
+//HIDDEN NAV STYLES
+#visible
+{
+    -webkit-transition: all 1s ease-in-out;
+       -moz-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+
+    opacity: 1;
+}
+
+#visible:hover
+{
+    #hidden
+    {
+        -webkit-transition: all 1s ease-in-out;
+           -moz-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+
+        opacity: 1;
+    }
+}
+
+#hidden
+{
+    padding-top: 1.5em;
+
+    -webkit-transition: all 1s ease-in-out;
+       -moz-transition: all 1s ease-in-out;
+            transition: all 1s ease-in-out;
+
+    opacity: 0;
+}
+//END HIDDEN MAV STYLES
+
+// ACCORDION STYLES
+.accordion-navigation a:hover{
+    text-decoration: underline;
+}
+
+// END ACCORDION STYLES
+
