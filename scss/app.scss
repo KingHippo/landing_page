@@ -39,7 +39,9 @@
 //   "foundation/components/visibility";
 
 // My custom css/sass
-
+h1 {
+  font-family: Baumans, cursive;
+}
 //RESUME STYLES
 .resume {
   background-color: #ffffff;
@@ -99,9 +101,12 @@ textarea {
 // END BLOG STYLES
 
 // LOGO STYLES
-.home-logo
+.center
 {
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     flex-direction: column;
 
     height: 100%;
@@ -115,6 +120,9 @@ textarea {
 .logo p
 {
     display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     flex-direction: column;
 
     justify-content: center;
@@ -124,7 +132,6 @@ textarea {
 .circle-logo
 {
     position: relative;
-    display: block;
 
     margin-left: auto;
     margin-right: auto;
@@ -229,11 +236,15 @@ textarea {
 {
     #hidden
     {
-        -webkit-transition: all 1s ease-in-out;
-           -moz-transition: all 1s ease-in-out;
-                transition: all 1s ease-in-out;
-
-        opacity: 1;
+      -webkit-transition: all 1s ease-in-out;
+         -moz-transition: all 1s ease-in-out;
+           -o-transition: all 1s ease-in-out;
+              transition: all 1s ease-in-out;
+         -webkit-opacity: 1;
+          -khtml-opacity: 1;
+                 opacity: 1;
+              -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=1)";
+              visibility: visible;
     }
 }
 
@@ -243,9 +254,13 @@ textarea {
 
     -webkit-transition: all 1s ease-in-out;
        -moz-transition: all 1s ease-in-out;
+         -o-transition: all 1s ease-in-out;
             transition: all 1s ease-in-out;
-
-    opacity: 0;
+       -webkit-opacity: 0;
+        -khtml-opacity: 0;
+               opacity: 0;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            visibility: hidden;
 }
 //END HIDDEN MAV STYLES
 

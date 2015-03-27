@@ -7,9 +7,18 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Home | Here | Now</title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-61043394-2', 'auto');
+  ga('send', 'pageview');
+</script>
 </head>
 <body>
-  <div class="row home-logo">
+  <div class="row center">
       <div id="visible">
 
         <div class="flatten circle-logo">
@@ -17,10 +26,15 @@
         </div>
 
       <div id="hidden" class="small-8 small-centered medium-9 medium-centered large-10 large-centered columns">
-        <ul class="button-group even-3 sans">
+      <ul class="show-for-small-only side-nav button-group even-3 sans">
           <li><a href="projects.html" class="small button secondary">Projects</a></li>
           <li><a href="resume.html" class="small button secondary">Resume</a></li>
-          <li><a href="contact.html" class="small button secondary">Contact</a></li>
+          <li><a href="contact.php" class="small button secondary">Contact</a></li>
+        </ul>
+        <ul class="show-for-medium-up button-group even-3 sans">
+          <li><a href="projects.html" class="small button secondary">Projects</a></li>
+          <li><a href="resume.html" class="small button secondary">Resume</a></li>
+          <li><a href="contact.php" class="small button secondary">Contact</a></li>
         </ul>
       </div>
 
