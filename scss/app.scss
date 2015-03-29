@@ -38,10 +38,10 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
-// My custom css/sass
-h1 {
-  font-family: Baumans, cursive;
-}
+// General Layout
+h1 { font-family: Baumans, cursive; }
+
+fieldset legend { background: none;}
 //RESUME STYLES
 .resume {
   background-color: #ffffff;
@@ -58,13 +58,11 @@ span {
 .side-nav {
   padding: 0.075rem 0;
 }
-//END RESUME STYLES
 
 // CONTACT STYLE
 textarea {
   min-height:150px;
 }
-// CONTACT STYLE
 
 //BLOG STYLES
 .container {
@@ -98,7 +96,7 @@ textarea {
 .blog {
     padding-top: 10px;
 }
-// END BLOG STYLES
+
 
 // LOGO STYLES
 .center
@@ -114,9 +112,34 @@ textarea {
     justify-content: center;
 }
 
+.flatten
+{
+    box-shadow: none;
+    &:before
+    {
+        top: 0;
+        left: 0;
+
+        width: 10em;
+        height: 10em;
+
+        border: .8em double;
+        border-radius: 6em;
+        box-shadow: 0 20px 10px -10px rgba(31, 31, 31, .5);
+    }
+    &:hover
+    {
+        &:before
+        {
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(128, 128, 128, .1) inset;
+        }
+    }
+}
+
 .logo {
   padding-top:2em;
 }
+
 .logo p
 {
     display: flex;
@@ -153,30 +176,6 @@ textarea {
     }
 }
 
-.flatten
-{
-    box-shadow: none;
-    &:before
-    {
-        top: 0;
-        left: 0;
-
-        width: 10em;
-        height: 10em;
-
-        border: .8em double;
-        border-radius: 6em;
-        box-shadow: 0 20px 10px -10px rgba(31, 31, 31, .5);
-    }
-    &:hover
-    {
-        &:before
-        {
-            box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(128, 128, 128, .1) inset;
-        }
-    }
-}
-
 .circle-logo p
 {
     color: #000000;
@@ -187,11 +186,13 @@ textarea {
        -moz-transition: all 1s ease-in-out;
             transition: all 1s ease-in-out;
 }
+
 .circle-logo:hover
 {
 
     color: #ffffff;
 }
+
 .circle-logo:hover p
 {
     -webkit-transition: all 1s ease-in-out;
@@ -199,7 +200,6 @@ textarea {
             transition: all 1s ease-in-out;
     color: #ffffff;
 }
-// END LOGO STYLES
 
 // BUTTON STYLES
 .button.secondary
@@ -220,7 +220,6 @@ textarea {
 
     border-left: none;
 }
-// END BUTTON STYLES
 
 //HIDDEN NAV STYLES
 #visible
@@ -262,12 +261,3 @@ textarea {
             -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
             visibility: hidden;
 }
-//END HIDDEN MAV STYLES
-
-// ACCORDION STYLES
-.accordion-navigation a:hover{
-    text-decoration: underline;
-}
-
-// END ACCORDION STYLES
-

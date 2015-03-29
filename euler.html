@@ -2,6 +2,12 @@
 <html>
 	<head>
 	<meta charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/app.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Euler | Here | Now</title>
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -13,8 +19,29 @@
   </script>
 	</head>
 <body>
+<div class="row logo">
+      <div id="visible">
 
+        <div class="flatten circle-logo">
+          <center><p>dp</p></center>
+        </div>
+
+      <div id="hidden" class="small-8 small-centered medium-9 medium-centered large-10 large-centered columns">
+        <ul class="button-group even-3 sans">
+          <li><a href="projects.html" class="small button secondary">Projects</a></li>
+          <li><a href="resume.html" class="small button secondary">Resume</a></li>
+          <li><a href="contact.php" class="small button secondary">Contact</a></li>
+        </ul>
+      </div>
+
+      </div>
+</div>
+<div class="row">
+<center>
   <form action="" id="sumForm" onsubmit="return false">
+
+  <div class="small-6 columns">
+  <div class="panel">
   <fieldset>
     <legend>Sum of multiples 3 and 5</legend>
     <label>Enter a number</label>
@@ -24,9 +51,13 @@
 
     <div id="totalSum"></div>
   </fieldset>
+  </div>
+  </div>
   </form>
 
   <form action="" id="fibForm" onsubmit="return false">
+  <div class="small-6 columns">
+  <div class="panel">
   <fieldset>
     <legend>Sum of even Fibonacci sequence</legend>
     <label>Enter a number</label>
@@ -36,9 +67,16 @@
 
     <div id="fibSum"></div>
   </fieldset>
+  </div>
+  </div>
   </form>
-
+  </center>
+</div>
+<div class="row">
+<center>
   <form action="" id="primeForm" onsubmit="return false">
+  <div class="small-6 columns">
+  <div class="panel">
   <fieldset>
     <legend>Largest prime number</legend>
     <label>Enter a number</label>
@@ -48,8 +86,12 @@
 
     <div id="prime"></div>
   </fieldset>
+  </div>
+  </div>
   </form>
-
+</center>
+</div>
+</div>
 </body>
 <script type="text/javascript" src="js/euler.js" charset="utf-8"></script>
 </html>
