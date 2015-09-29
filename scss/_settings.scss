@@ -116,7 +116,6 @@ $white       : #FFFFFF;
 // $black       : #000000;
 $black       : #000000;
 $grey        : #868686;
-$blog-color  : #E2E2E2;
 
 // We use these as default colors throughout
 // $primary-color: #008CBA;
@@ -126,6 +125,8 @@ $secondary-color: $grey;
 // $success-color: #43AC6A;
 // $warning-color: #f08a24;
 // $info-color: #a0d3e8;
+$blog-color  : #E2E2E2;
+$button-color: #d3d3d3;
 
 // We use these to control various global styles
 // $body-bg: $white;
@@ -324,7 +325,7 @@ $body-bg: $grey;
 
 // $accordion-navigation-padding: rem-calc(16);
 // $accordion-navigation-bg-color: $silver;
-$accordion-navigation-bg-color: $blog-color;
+
 // $accordion-navigation-hover-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -5%);
 // $accordion-navigation-active-bg-color: scale-color($accordion-navigation-bg-color, $lightness: -3%);
 // $accordion-navigation-font-color: $jet;
@@ -334,7 +335,7 @@ $accordion-navigation-bg-color: $blog-color;
 
 // $accordion-content-padding: ($column-gutter/2);
 // $accordion-content-active-bg-color: $white;
-$accordion-content-active-bg-color: $white;
+
 
 // 02. Alert Boxes
 // - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -458,6 +459,7 @@ $button-function-factor: -10%;
 // $button-border-style: solid;
 $button-border-style: none;
 // $button-bg-color: $primary-color;
+$button-bg-color: $button-color;
 // $button-bg-hover: scale-color($button-bg-color, $lightness: $button-function-factor);
 // $button-border-color: $button-bg-hover;
 // $secondary-button-bg-hover: scale-color($secondary-color, $lightness: $button-function-factor);

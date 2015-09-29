@@ -23,7 +23,7 @@ module.exports = function(grunt) {
         files: 'scss/**/*.scss',
         tasks: ['sass']
       }
-    },
+    }
 
    uncss: {
   dist: {
@@ -31,7 +31,7 @@ module.exports = function(grunt) {
       'new/tidy.css': ['index.html']
 	    }
 	  }
-	},
+	}
 
 processhtml: {
   dist: {

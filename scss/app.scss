@@ -39,6 +39,7 @@
 //   "foundation/components/visibility";
 
 // General Layout
+
 h1 { font-family: Baumans, cursive; }
 
 fieldset legend { background: none;}
@@ -134,7 +135,7 @@ textarea {
             box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 0 0 40px rgba(128, 128, 128, .1) inset;
         }
     }
-}
+}>
 
 .logo {
   padding-top:2em;
@@ -204,7 +205,11 @@ textarea {
 // BUTTON STYLES
 .button.secondary
 {
-    background-color: #868686;
+background-color: #868686;
+}
+.button-group:hover li a
+{
+color: #000000;
 }
 
 .button-group:hover li a
@@ -212,7 +217,7 @@ textarea {
     color: #000000;
 }
 
-.button-group.even-4 li a
+.button-group.even-3 li a
 {
     -webkit-transition: all 1s ease-in-out;
        -moz-transition: all 1s ease-in-out;
