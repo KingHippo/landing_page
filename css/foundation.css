@@ -2597,7 +2597,7 @@ button.large, .button.large {
     padding-bottom: 1.1875rem;
     padding-left: 2.25rem;
     font-size: 1.25rem;
-    /*     @else                            { font-size: $padding - rem-calc(2); } */;
+    /*     @else                            { font-size: $padding - rem-calc(2); } */
 }
 
 button.small, .button.small {
@@ -2606,7 +2606,7 @@ button.small, .button.small {
     padding-bottom: 0.9375rem;
     padding-left: 1.75rem;
     font-size: 0.8125rem;
-    /*     @else                            { font-size: $padding - rem-calc(2); } */;
+    /*     @else                            { font-size: $padding - rem-calc(2); } */
 }
 
 button.tiny, .button.tiny {
@@ -2615,7 +2615,7 @@ button.tiny, .button.tiny {
     padding-bottom: 0.6875rem;
     padding-left: 1.25rem;
     font-size: 0.6875rem;
-    /*     @else                            { font-size: $padding - rem-calc(2); } */;
+    /*     @else                            { font-size: $padding - rem-calc(2); } */
 }
 
 button.expand, .button.expand {
@@ -4172,7 +4172,7 @@ ul li ol {
     margin-left: 1.25rem;
     margin-bottom: 0;
     font-size: 1rem;
-  /* Override nested font-size change */;
+  /* Override nested font-size change */
 }
 
 ul.square li ul, ul.circle li ul, ul.disc li ul {
@@ -4358,7 +4358,7 @@ blockquote p {
 
     thead {
         display: table-header-group;
-    /* h5bp.com/t */;
+    /* h5bp.com/t */
     }
 
     tr,
@@ -5756,7 +5756,7 @@ label {
     display: block;
     font-weight: normal;
     margin-bottom: 0.5rem;
-  /* Styles for required inputs */;
+  /* Styles for required inputs */
 }
 
 label.right {
