@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/normalize.css" />
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="js/jquery.onepage-scroll.js"></script>
   <title>Home | Here | Now</title>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -17,36 +18,49 @@
   ga('create', 'UA-61043394-2', 'auto');
   ga('send', 'pageview');
 </script>
+
+
 </head>
 <body>
+  <!-- BEGIN BACKGROUND GRADIENT -->
   <div id="gradient">
-  <div class="row center">
+    <!-- CENTER CONTET -->
+    <div class="row center">
+      <!-- VISIBLE TEXT -->
       <div id="visible">
-
+        <!-- MAIN LOGO -->
         <div class="flatten circle-logo">
           <center><p>dp</p></center>
         </div>
-
-      <div id="hidden" class="small-8 small-centered medium-9 medium-centered large-10 large-centered columns">
-      <center>
-      <ul class="side-nav hide-for-medium-up even-4 sans">
-          <li><a href="projects.html" class="small button secondary">Projects</a></li>
-          <li><a href="resume.html" class="small button secondary">Resume</a></li>
-          <li><a href="contact.php" class="small button secondary">Contact</a></li>
-          <li><a href="/blog/index.php" class="small button secondary">Blog</a></li>
-        </ul>
-      </center>
-        <ul class="show-for-medium-up button-group even-4 sans">
-          <li><a href="projects.html" class="small button secondary">Projects</a></li>
-          <li><a href="resume.html" class="small button secondary">Resume</a></li>
-          <li><a href="contact.php" class="small button secondary">Contact</a></li>
-          <li><a href="/blog/index.php" class="small button secondary">Blog</a></li>
-        </ul>
+        <!-- END MAIN LOGO -->
+        <!-- HIDDEN TEXT -->
+        <div id="hidden" class="small-8 small-centered medium-9 medium-centered large-10 large-centered columns">
+          <!-- MOBLIE NAVIGATION -->
+          <center>
+            <ul class="side-nav hide-for-medium-up even-4 sans">
+              <li><a href="#" class="small button secondary">Projects</a></li>
+              <li><a href="#" class="small button secondary">Resume</a></li>
+              <li><a href="#" class="small button secondary">Contact</a></li>
+              <li><a href="#" class="small button secondary">Blog</a></li>
+            </ul>
+          </center>
+          <!-- END MOBLIE NAVIGATION -->
+          <!-- DESKTOP NAVIGATION -->
+          <ul class="show-for-medium-up button-group even-4 sans">
+            <li><a href="#" class="small button secondary">Projects</a></li>
+            <li><a href="#" class="small button secondary">Resume</a></li>
+            <li><a href="#" class="small button secondary">Contact</a></li>
+            <li><a href="#" class="small button secondary">Blog</a></li>
+          </ul>
+          <!-- END DESKTOP NAVIGATION -->
+        </div>
+        <!-- END HIDDEN TEXT -->
       </div>
-
-      </div>
+      <!-- END VISIBLE TEXT -->
+    </div>
+    <!-- END CENTER CONTENT -->
   </div>
-</div>
+  <!-- END BACKGROUND GRADIENT -->
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="js/gradient.js"></script>

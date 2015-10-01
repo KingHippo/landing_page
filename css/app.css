@@ -859,7 +859,6 @@ span {
 .circle-logo:before,
 .circle-logo:after {
   position: absolute;
-  z-index: -2;
   content: '';
   transition: all 1s ease-in-out;
 }
@@ -886,7 +885,11 @@ span {
 }
 
 .button.secondary {
-  background-color: #868686;
+  background: rgba(255,255,255,.001);
+}
+
+.button.secondary:hover {
+  background: rgba(255,255,255,.001);
 }
 
 .button-group:hover li a {
